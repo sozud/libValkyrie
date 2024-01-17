@@ -62,17 +62,17 @@ include_directories(${EMULATOR_INCLUDE_DIR}/Library/)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 #Enable NTSC mode
-OPTIONAL_DEFINE(NTSC_VERSION "Enable/Disable NTSC Mode" ON)
+#OPTIONAL_DEFINE(NTSC_VERSION "Enable/Disable NTSC Mode" ON)
 
 #Enable 32-bit address for tag
-OPTIONAL_DEFINE(USE_32_BIT_ADDR "Enable/Disable 32-bit address for tag" ON)
+#OPTIONAL_DEFINE(USE_32_BIT_ADDR "Enable/Disable 32-bit address for tag" ON)
 
 #Enable KAIN2 mode
-OPTIONAL_DEFINE(KAIN2 "Enable/Disable KAIN2 code" ON)
+#OPTIONAL_DEFINE(KAIN2 "Enable/Disable KAIN2 code" ON)
 
 if(NOT ANDROID)
 
-BuildPreProcessorDefinitions()
+#BuildPreProcessorDefinitions()
 
 set_target_properties(
 ${PROJECT_NAME} PROPERTIES OUTPUT_NAME "Valkyrie"

@@ -139,7 +139,7 @@ uintptr_t actualTerminator[2] = { (uintptr_t)-1, (uintptr_t)0};
 uintptr_t terminatorOT[2] = { (uintptr_t)&actualTerminator, 0};
 #else
 unsigned int actualTerminator = -1;
-unsigned int terminatorOT = (unsigned int)&actualTerminator;
+unsigned int terminatorOT = (unsigned int)(size_t)&actualTerminator;
 #endif
 
 int IsValidCode(int code)
